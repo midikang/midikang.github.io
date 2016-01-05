@@ -15,11 +15,13 @@ found at http://semver.org.
 
 The tl;dr version is that for a version like this:
 
+```
   1.2.3
   ^ ^ ^
   | | `-- Patch version. Update for every change.
   | `---- Minor version. Update for API additions.
   `------ Major version. Update for breaking API changes.
+```
 
 npm has a special command called `npm version` which will update your
 package.json file for you, and also commit the change to git if your
