@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -11,22 +9,42 @@
 <body>
 
 <div class="container">
-  <h3>Popover Options</h3>
-  <p>The trigger option specifies how the popover is triggered.</p>
-  <div>
-    <button class="btn btn-success btn-md">Click me</button>
-    <button class="btn btn-warning btn-md">Hover over me</button>
-    <button class="btn btn-danger btn-md">Focus (tab or click)</button>
-  </div>
-</div>
+  <h2>Tab with Dropdown Menu</h2>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
 
-<script>
-$(document).ready(function(){
-    $('.btn-success').popover({title: "Header", content: "Blabla", trigger: "click"});
-    $('.btn-warning').popover({title: "Header", content: "Blabla", trigger: "hover"});
-    $('.btn-danger').popover({title: "Header", content: "Blabla", trigger: "focus"});
-});
-</script>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Inbound <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Inbound Shipment Console</a></li>
+        <li><a href="#">Inbound Receipt Console</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Inventory <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Inventory Location</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Outbound <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Outbound Shipment Console</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Report <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Inventory Report</a></li>
+        <li><a href="#">Cycle Count Report</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
 </body>
 </html>
