@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!--  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  -->
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>Inbound Shipment Console</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>WMS</h2>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Inbound <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="inbound/poshipment.html">Inbound Shipment Console</a></li>
+        <li><a href="#">Inbound Receipt Console</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Inventory <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Inventory Location</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Outbound <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Outbound Shipment Console</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Report <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Inventory Report</a></li>
+        <li><a href="#">Cycle Count Report</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="table-responsive">
+   
+    <table class="table table-bordered">
+       <caption>Inbound Order Shipment List</caption>
+       <thead>
+          <tr class="success">
+             <th><label><input type="checkbox"></label></th>
+             <th>Shipment#</th>
+             <th>Status</th>
+             <th>Actual Ship Date</th>
+          </tr>
+       </thead>
+       <tbody>
+          <tr>
+             <td><label><input type="checkbox"></label></td>
+             <td>15VHTB2A</td>
+             <td>Receipt Closed</td>
+             <td>06/12/2015 13:52:46</td>
+          </tr>
+          <tr>
+             <td><label><input type="checkbox"></label></td>
+             <td>15VHTB2B</td>
+             <td>Included In Receipt</td>
+             <td>06/12/2015 15:40:19</td>
+          </tr>
+          <tr>
+             <td><label><input type="checkbox"></label></td>
+             <td>15VHTB2D</td>
+             <td>Shipment Shipped</td>
+             <td>06/30/2015 10:28:56</td>
+          </tr>
+          <tr>
+             <td><label><input type="checkbox"></label></td>
+             <td>1550EHJ</td>
+             <td>Shipment Created</td>
+             <td></td>
+          </tr>
+       </tbody>
+    </table>
+</div>  
+</body>
+</html>
